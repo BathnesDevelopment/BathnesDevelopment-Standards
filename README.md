@@ -1,4 +1,4 @@
-# Bath and North East Somerset Council development team standards
+# Bath & NE Somerset Development team standards
 Defining our standards for buildings and publishing software using public GitHub repositories.
 
 ## What is it?
@@ -7,11 +7,11 @@ This repository describes and gives templates for the general standards of docum
 
 It will also describe in very general terms coding standards and any other relevant guidelines for creating and maintaining code.
 
-Anyone coming across a particular repository (internal or external) should understand what it is, why it was created, what skills are required to reproduce/maintain it, and how to go about building and deploying the code.
+Anyone coming across a particular repository (internal or external) should be able to quickly understand what it is, why it was created, what skills are required to reproduce/maintain it, what the licensing terms are, and how to go about building and deploying the code.
 
 ## Documentation standards
 
-All repositories should be documented to a uniform standard including a readme file taken from a standard template.
+All repositories should be documented to a uniform standard, primarily including a readme file taken from a template.
 
 In development...
 
@@ -25,12 +25,19 @@ In development...
 
 There is a wide variety of technologies used in the Council so there are few obvious limitations when choosing technologies.  However, repositories should ideally avoid using technologies that are unlikely to be used elsewhere in the Council for development, or that have historically caused issues.
 
-One to avoid would likely cause further issues in future maintenance.  
+Deploying ones to avoid would likely cause further issues in future maintenance.  
 
 To avoid: Access databases, Oracle databases, VB, Classic ASP pages, PHP
 Ideal options: ASP.Net, C#, Microsoft SQL Server, PostgreSQL/PostGIS, Powershell
 
-In general the set of technologies per project should be kept as minimal as possible.  Limit the requirements on server infrastructure setup and the number of distinct tecnnologies used.
+In general the set of technologies per project should be kept as minimal as possible.  Limit the requirements on server infrastructure setup/resources and the number of distinct technologies used.
+
+## Security standards
+
+While publicly making a lot of code available, there are some security considerations:
+
+- Avoid publishing infrastructure details.  It is sensible to not publish too much about infrastructure such as server names or ports.   That may mean being more restricting within config/settings files, or not publishing areas of code dealing with publishing profiles (and holding these elsewhere). 
+- Be extra careful about passwords.  It can be useful to explicitly restrict certain files (e.g. .config) using gitignore and then publish samples for these files.  This can take longer and be some exra effort but as long as the steps are explicitly listed in build/publish instructions then it can be an extra step in avoiding ever accidentally publishing sensitive information.
 
 ## Coding standards
 
