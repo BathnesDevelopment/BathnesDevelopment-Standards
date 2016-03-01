@@ -11,7 +11,11 @@ Anyone coming across a particular repository (internal or external) should be ab
 
 ## Documentation standards
 
-All repositories should be documented to a uniform standard, primarily including a readme file taken from a template.
+All repositories should be documented to a uniform standard, primarily including a readme file taken from our template in this repository.
+
+Installation should be covered in the readme file but more in depth installation details can be included as part of a documentation folder.  
+
+User guides can also be included within this documentation folder.
 
 In development...
 
@@ -23,12 +27,12 @@ In development...
 
 ## Technology standards
 
-There is a wide variety of technologies used in the Council so there are few obvious limitations when choosing technologies.  However, repositories should ideally avoid using technologies that are unlikely to be used elsewhere in the Council for development, or that have historically caused issues.
+There is a wide variety of technologies used in the Council so there are few obvious limitations when choosing technologies.  However, repositories should ideally avoid using technologies unlikely to be used elsewhere in the Council for development, or that have historically caused issues.
 
-Deploying ones to avoid would likely cause further issues in future maintenance.  
+Deploying solutions that we'd rather avoid would likely cause further issues in future maintenance.  
 
-To avoid: Access databases, Oracle databases, VB, Classic ASP pages, PHP
-Ideal options: ASP.Net, C#, Microsoft SQL Server, PostgreSQL/PostGIS, Powershell
+- To avoid: Access databases, Oracle databases, VB, Classic ASP pages, PHP, Linux-only (unfortunately)
+- Ideal options: ASP.Net, C#, Microsoft SQL Server, PostgreSQL/PostGIS, Powershell, HTML5, JavaScript, jQuery, Bootstrap
 
 In general the set of technologies per project should be kept as minimal as possible.  Limit the requirements on server infrastructure setup/resources and the number of distinct technologies used.
 
