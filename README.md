@@ -1,5 +1,5 @@
 # Bath & NE Somerset Development team standards
-Defining our standards for buildings and publishing software using public GitHub repositories.
+Defining our standards for building and publishing software using public GitHub repositories.
 
 ## What is it?
 
